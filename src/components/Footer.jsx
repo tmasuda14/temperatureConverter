@@ -6,7 +6,6 @@ class Footer extends Component {
         let year = new Date().getFullYear()
         return year
     }
-
     render () {
         return (<footer className="footer">Copyright {this.currentYear()} 
                     <br/><span className="light-text">Tai Masuda</span>
