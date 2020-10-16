@@ -4,7 +4,6 @@ import './App.css';
 import Display from './components/Display'
 import Footer from './components/Footer'
 
-
 const App = (props) => {
   // Set state for value of temperature
   const [temp, setTemp] = useState(0);
