@@ -1,25 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Result extends Component {
-    render() {
-        return (
-            <div class="w-400 mw-full">
-                 {/* <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% --> */}
-                <div class="card">
-                    <h2 class="card-title">
-                        {this.props.tempType}
-                    </h2>
-                    <p class="text-muted">
-                        Result: {this.props.temp}{this.props.degrees === 'true' && '°'} {this.props.tempType} [fix hardcode]
-                    </p>
-                    {/* <div class="text-right"> */}
-                         {/* <!-- text-right = text-align: right --> */}
-                    {/* <a href="#" class="btn">Read more</a>
-                    </div> */}
-                </div>
+const Result = (props) => {
+
+    return (
+        <div className="w-400 mw-full">
+            <div className="card">
+                <h2 className="card-title">
+                    {props.tempType}
+                </h2>
+                <p className="text-muted">
+                    Result: {props.temp}{props.degrees === 'true' && '°'} {props.tempType.slice(0, 1)}
+                </p>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Result;
