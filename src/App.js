@@ -45,22 +45,16 @@ const App = (props) => {
             <br />
             <h5 className="sidebar-title">Toggle Initial Scale</h5>
             <div className="sidebar-divider"></div>
-            <a href="#" className="sidebar-link sidebar-link-with-icon" name="f" onClick={handleTempToggle}>
-              <span className="sidebar-icon bg-danger text-white rounded-circle"> 
-                <i className="fa fa-file-powerpoint-o" aria-hidden="true"></i>
-              </span>
+            <a className="sidebar-link sidebar-link-with-icon" name="f" onClick={handleTempToggle}>
+      
               Fahrenheit
             </a>
-            <a href="#" className="sidebar-link sidebar-link-with-icon" name="c" onClick={handleTempToggle}>
-              <span className="sidebar-icon bg-success text-dark rounded-circle"> 
-                <i className="fa fa-file-excel-o" aria-hidden="true"></i>
-              </span>
+            <a className="sidebar-link sidebar-link-with-icon" name="c" onClick={handleTempToggle}>
+              
               Celsius
             </a>
-            <a href="#" className="sidebar-link sidebar-link-with-icon" name="k" onClick={handleTempToggle}>
-              <span className="sidebar-icon bg-primary text-white rounded-circle"> 
-                <i className="fa fa-file-word-o" aria-hidden="true"></i>
-              </span>
+            <a className="sidebar-link sidebar-link-with-icon" name="k" onClick={handleTempToggle}>
+              
               Kelvin
             </a>
         </div>
