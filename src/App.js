@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 const App = (props) => {
   // Set state for value of temperature
   const [temp, setTemp] = useState(0);
-
+  
   // Set state for F, C, or K temperature scales
   const [scale, setScale] = useState('f');
 
