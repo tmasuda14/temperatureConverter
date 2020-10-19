@@ -24,49 +24,40 @@ const App = (props) => {
 
   return (
     <div>
-    <div 
-      className="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" 
-      data-sidebar-type="overlayed-sm-and-down">
-      {/* <!-- Navbar --> */}
-      <nav className="navbar">
-        <a href="https://masuda.tech">Masuda.tech</a>
-
-      </nav>
-      {/* <!-- Sidebar --> */}
-      <div className="sidebar">
-          <div className="sidebar-menu">
-            <h5 className="sidebar-title">Temperature Converter</h5>
-            <div className="sidebar-divider"></div>
-            <form>
-                <input name="temp" type="text" placeholder="0" onChange={handleChange}></input><span> </span>
-                <label for="temp">  {scale.toUpperCase()} </label>
-                
-              </form>
-            <br />
-            <h5 className="sidebar-title">Toggle Initial Scale</h5>
-            <div className="sidebar-divider"></div>
-            <a className="sidebar-link sidebar-link-with-icon" name="f" onClick={handleTempToggle}>
-      
+    <div>
+      <nav><a href="https://masuda.tech">Masuda.tech</a></nav>
+      <div>
+          <div>
+            <h5>Temperature Converter</h5>
+            <hr width="35%"></hr>
+            <h5>Toggle Initial Scale</h5>
+            <div>
+            <a name="f" onClick={handleTempToggle}>
               Fahrenheit
             </a>
-            <a className="sidebar-link sidebar-link-with-icon" name="c" onClick={handleTempToggle}>
-              
+            <br/>
+            <a name="c" onClick={handleTempToggle}>
               Celsius
             </a>
-            <a className="sidebar-link sidebar-link-with-icon" name="k" onClick={handleTempToggle}>
-              
+            <br/>
+            <a name="k" onClick={handleTempToggle}>
               Kelvin
             </a>
+            </div>
+            <hr width="35%"></hr>
+            <form>
+              <input name="temp" type="text" placeholder="0" onChange={handleChange}></input><span> </span>
+              <label for="temp">  {scale.toUpperCase()} </label>
+            </form>
+            <hr width="35%"></hr>
         </div>
       </div>
       {/* Main Display */}
       <Display 
         scale={scale}
         temp={temp}/>
-      {/* <!-- Navbar fixed bottom --> */}
-      <nav className="navbar navbar-fixed-bottom">
-        <Footer />
-      </nav>
+      <hr width="35%"></hr>
+      <nav><Footer /></nav>
     </div>
     </div>
   )

@@ -7,7 +7,7 @@ class Footer extends Component {
         return year
     }
     render () {
-        return (<footer className="footer">Copyright {this.currentYear()} 
+        return (<footer className="footer">{this.currentYear()} 
                     <br/><span className="light-text">Tai Masuda</span>
                 </footer>)
     }
