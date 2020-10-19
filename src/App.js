@@ -29,7 +29,7 @@ const App = (props) => {
       <div>
           <div>
             <h5>Temperature Converter</h5>
-            <hr width="35%"></hr>
+            <hr></hr>
             <h5>Toggle Initial Scale</h5>
             <div>
             <a name="f" onClick={handleTempToggle}>
@@ -44,19 +44,19 @@ const App = (props) => {
               Kelvin
             </a>
             </div>
-            <hr width="35%"></hr>
+            <hr></hr>
             <form>
               <input name="temp" type="text" placeholder="0" onChange={handleChange}></input><span> </span>
               <label for="temp">  {scale.toUpperCase()} </label>
             </form>
-            <hr width="35%"></hr>
+            <hr></hr>
         </div>
       </div>
       {/* Main Display */}
       <Display 
         scale={scale}
         temp={temp}/>
-      <hr width="35%"></hr>
+      <hr></hr>
       <nav><Footer /></nav>
     </div>
     </div>
