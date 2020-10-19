@@ -21,7 +21,6 @@ const App = (props) => {
     setScale(scale);
   }
 
-
   return (
     <div>
     <div>
